@@ -29,7 +29,7 @@ const allowedKeys = [
 //Função para limpar display
 document.getElementById("clear").addEventListener("click", function () {
   input.value = "";
-  input.focus();
+  // input.focus();
 
   const copyToClipboardButton = document.getElementById("copyToClipboard");
   const result = document.getElementById("input");

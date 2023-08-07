@@ -18,17 +18,23 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
   font-family: "Ubuntu", sans-serif;
-  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--base-font-size);
 }
 
 main {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem;
   max-width: 45rem;
-  padding: 0 2rem 2.5rem;
+  padding: 0 2.5rem 2.5rem;
   position: relative;
-  border: var(--border-color) solid 1px;
+  border: var(--border-color) solid 2px;
   border-radius: 15px;
+  margin-top: 6rem;
 }
 
 header {
@@ -67,18 +73,20 @@ input {
   padding: 1rem;
   text-align: end;
   width: 1000%;
+  border-left: none;
 }
 
 #copyToClipboard {
   background-color: transparent;
   border: 2px solid var(--border-color);
+  border-right: none;
 
   border-radius: 0.5rem 0 0 0.5rem;
   color: var(--font-color);
   cursor: pointer;
   display: block;
   height: 4.28rem;
-  width: 6rem;
+  width: 100%;
 }
 #result {
   border-width: 2px 2px 2px 2px;
@@ -105,7 +113,7 @@ input {
   color: var(--bg-color);
   cursor: pointer;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 3.3rem;
 }
 
 #keys button:hover {
@@ -131,4 +139,16 @@ input {
 .success {
   border-color: var(--primary-color) !important;
   color: var(--primary-color) !important;
+}
+
+@media (max-width: 735px) {
+  main {
+    /* margin: 3rem 1.3rem; */
+    padding: 0 1.3rem 0.7rem;
+  }
+
+  #keys button {
+    font-size: calc(0.5em + 1vw);
+    padding: 1rem;
+  }
 }
