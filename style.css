@@ -96,7 +96,7 @@ input {
 #keys {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 0.8rem;
   margin: 2rem 0;
 }
 
@@ -148,7 +148,12 @@ input {
   }
 
   #keys button {
-    font-size: calc(0.5em + 1vw);
-    padding: 1rem;
+    font-size: calc(0.66rem + 1vw);
+    padding: 0.8rem 1rem;
+  }
+
+  #keys {
+    display: grid;
+    gap: 0.6rem;
   }
 }
